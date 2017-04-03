@@ -13,13 +13,13 @@
 
 ActiveRecord::Schema.define(version: 20130902063526) do
 
-  create_table "albums", force: true do |t|
+  create_table "albums", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "profiles", force: true do |t|
+  create_table "profiles", force: :cascade do |t|
     t.string   "locale",     default: "en"
     t.string   "email"
     t.integer  "age"
@@ -28,14 +28,14 @@ ActiveRecord::Schema.define(version: 20130902063526) do
     t.datetime "updated_at"
   end
 
-  create_table "songs", force: true do |t|
+  create_table "songs", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "album_id"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.datetime "created_at"
