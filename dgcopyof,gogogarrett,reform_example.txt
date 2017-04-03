@@ -7,3 +7,23 @@ dg fork of..
 https://github.com/gogogarrett/reform_example.git
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2017-04-02[Apr-Sun]21-38PM
+
+cript for scaffold:
+
+rails generate scaffold Album title:string --no-migration
+
+rails generate scaffold Profile locale:string email:string age:integer user:references --no-migration
+
+rails generate scaffold Song name:string album:references --no-migration
+
+rails generate scaffold User first_name:string last_name:string --no-migration
+
+albe@v206x20161030220807:~/share203/dgreform$ 
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
